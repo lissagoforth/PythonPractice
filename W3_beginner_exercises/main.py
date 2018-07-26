@@ -299,11 +299,11 @@
 
 # 27. Write a Python program to concatenate all elements in a list into a string and return it.
 
-stuff = ["this", "is", "a", "list", "of", "some", "words"]
-seperator = " "
-seperator = seperator.join(stuff)
-print(seperator)
-# -----------------------------------------------------------------
+# stuff = ["this", "is", "a", "list", "of", "some", "words"]
+# seperator = " "
+# seperator = seperator.join(stuff)
+# print(seperator)
+# # -----------------------------------------------------------------
 
 # 28. Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing if any numbers that come after 237 in the sequence.
 # numbers = [    
@@ -312,39 +312,186 @@ print(seperator)
 #     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 
 #     958,743, 527
 #     ]
+
+# def find_evens(arr):
+#     for i in arr:
+#         if i % 2 == 0:
+#             print(i)
+#         if i == 237:
+#             break
+# find_evens(numbers)             
 # -----------------------------------------------------------------
 
 # 29. Write a Python program to print out a set containing all the colors from color_list_1 which are not present in color_list_2.
 # Test Data : 
 # color_list_1 = set(["White", "Black", "Red"]) 
 # color_list_2 = set(["Red", "Green"])
-# Expected Output : 
-# {'Black', 'White'}
+# # Expected Output : 
+# # {'Black', 'White'}
+
+# def get_diff(a,b):
+#     return (list(set(a) - set(b)))
+# print(get_diff(color_list_1, color_list_2))
 # -----------------------------------------------------------------
+
+# 30. Write a Python program that will accept the base and height of a triangle and compute the area
+# print("Lets find the area of a triangle! Provide a number for the base.")
+# base = int(input())
+# print("Okay, now provide a height")
+# height = int(input())
+# def area(b,h):
+#     return (b * h)/2
+# print(area(base, height))
+# -----------------------------------------------------------------
+
+# 31. Write a Python program to compute the greatest common divisor (GCD) of two positive integers
+# print("Let's find the the greatest common divisor. Please provide a number.")
+# n1 = int(input())
+# print("We still need one more number.")
+# n2 = int(input())
+# def gcd(x, y):
+#     res = 1
+#     if x % y == 0:
+#         return y
+#     for i in range(int(y/2), 0, -1):
+#         if x % i == 0 and y % i == 0:
+#             res = i
+#             break
+#     return res
+# print(gcd(n1,n2))        
+# -----------------------------------------------------------------
+
+# 32. Write a Python program to get the least common multiple (LCM) of two positive integers.
+# print("Let's find the the least common multiple. Please provide a number.")
+# n1 = int(input())
+# print("We still need one more number.")
+# n2 = int(input())
+# def lcm(x,y):
+#     if x>y:
+#         n = x
+#     else:
+#         n = y
+#     while(True):
+#         if((n%x == 0) and (n%y == 0)):
+#             res = n
+#             break
+#         n += 1
+#     return res
+# print(lcm(n1,n2))
+# -----------------------------------------------------------------
+
+# 33. Write a Python program to sum of three given integers. However, if two values are equal sum will be zero
+# print("Let's have fun with numbers! Gimme one.")
+# n1 = int(input())
+# print("Gimme another one.")
+# n2 = int(input())
+# print("Gimme one more.")
+# n3 = int(input())
+# def fun(x,y,z):
+#     if (x==y) or (x==z) or (y==z):
+#         return 0
+#     else:
+#         return x + y + z
+# print(fun(n1,n2,n3))
+# -----------------------------------------------------------------
+
+# 34. Write a Python program to sum of two given integers. However, if the sum is between 15 to 20 it will return 20.
+# print("Let's have fun with numbers! Gimme one.")
+# n1 = int(input())
+# print("Gimme another one.")
+# n2 = int(input())
+# def scope(x,y):
+#     if (x+y) <= 20 and (x+y) >= 15:
+#         return 20
+#     else:
+#         return x+y
+# print(scope(n1,n2))
+# -----------------------------------------------------------------
+
+# 35. Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5.
+# print("Let's have fun with numbers! Gimme one")
+# n1 = int(input())
+# print("Gimme another one.")
+# n2 = int(input())
+# def test(x,y):
+#     if (x == y) or (x + y == 5) or (abs(x - y) == 5):
+#         return True
+#     else:
+#         return False
+# print(test(n1,n2))
+# -----------------------------------------------------------------
+
+# 36. Write a Python program to add two objects if both objects are an integer type.
+# def add_em(x,y):
+#     if not (isinstance(x,int) and isinstance(y,int)):
+#         raise TypeError("I NEED NUMBERS TO ADD, FOOL, NOT STRINGS OR SOME SHIT")
+#     return x + y
+# print("What is 2+5?", add_em(2,5))
+# print("What is cat + dog?", add_em("cat","dog"))
+# -----------------------------------------------------------------
+
+# 37. Write a Python program to display your details like name, age, address in three different lines.
+# print("What's your name?")
+# name=input()
+# print("How old are you?")
+# age=int(input())
+# print("What's your address?")
+# address=input()
+# print("To summarize: \nName:", name, "\nAge:", age, "\nAddress:", address)
+# #alternative solution
+# print("To summarize: \nName: {}\nAge: {}\nAddress: {}".format(name, age, address))
+# -----------------------------------------------------------------
+
+# 38. Write a Python program to solve (x + y) * (x + y).
+# Test Data : x = 4, y = 3
+# Expected Output : (4 + 3) ^ 2) = 49
+print("Give me a number, any number.")
+n1 = int(input())
+print("Give me another number.")
+n2 = int(input())
+def maths(x,y):
+    return (()**)
 
 # -----------------------------------------------------------------
 
+# 39. Write a Python program to compute the future value of a specified principal amount, rate of interest, and a number of years.
+# Test Data : amt = 10000, int = 3.5, years = 7
+# Expected Output : 12722.79
 # -----------------------------------------------------------------
 
+# 40. Write a Python program to compute the distance between the points (x1, y1) and (x2, y2).
 # -----------------------------------------------------------------
+
+# 41. Write a Python program to check whether a file exists.
 # -----------------------------------------------------------------
+
+# 42. Write a Python program to determine if a Python shell is executing in 32bit or 64bit mode on OS.
 # -----------------------------------------------------------------
+
+# 43. Write a Python program to get OS name, platform and release information.
 # -----------------------------------------------------------------
+
+# 44. Write a Python program to locate Python site-packages.
 # -----------------------------------------------------------------
+
+# 45. Write a python program to call an external command in Python.
 # -----------------------------------------------------------------
+
+# 46. Write a python program to get the path and name of the file that is currently executing.
 # -----------------------------------------------------------------
+
+# 47. Write a Python program to find out the number of CPUs using.
 # -----------------------------------------------------------------
+
+# 48. Write a Python program to parse a string to Float or Integer. 
 # -----------------------------------------------------------------
+
+# 49. Write a Python program to list all files in a directory in Python. 
 # -----------------------------------------------------------------
+
+# 50. Write a Python program to print without newline or space.
 # -----------------------------------------------------------------
-# -----------------------------------------------------------------
-# -----------------------------------------------------------------
-# -----------------------------------------------------------------
-# -----------------------------------------------------------------
-# -----------------------------------------------------------------
-# -----------------------------------------------------------------
-# -----------------------------------------------------------------
-# -----------------------------------------------------------------
+
 # -----------------------------------------------------------------
 
 
