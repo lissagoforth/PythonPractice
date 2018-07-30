@@ -741,28 +741,55 @@
 # -----------------------------------------------------------------
 
 # 64. Write a Python program to get file creation and modification date/times.
-import os, datetime
-path = input("Provide a file name: ")
-path = os.path.abspath("../{}".format(path))
-c_on = datetime.datetime.fromtimestamp(os.path.getctime(path)).strftime('%Y/%m/%d %H:%M:%S')
-m_on = datetime.datetime.fromtimestamp(os.path.getmtime(path)).strftime('%Y/%m/%d %H:%M:%S')
-print("File was created on: ", c_on)
-print("File was mdified on: ", m_on)
+# import os, datetime
+# path = input("Provide a file name: ")
+# path = os.path.abspath(path)
+# c_on = datetime.datetime.fromtimestamp(os.path.getctime(path)).strftime('%m/%d/%Y %H:%M:%S')
+# m_on = datetime.datetime.fromtimestamp(os.path.getmtime(path)).strftime('%m/%d/%Y %H:%M:%S')
+# print("File was created on: ", c_on)
+# print("File was modified on: ", m_on)
 
 # -----------------------------------------------------------------
 
 # 65. Write a Python program to convert seconds to day, hour, minutes and seconds.
-
+# sec = int(input("Give me a ridiculous number of seconds: "))
+# def breakItDown(n):
+#     totalsec = n
+#     day = n // (24 * 3600)
+#     n = n % (24 * 3600)
+#     hour = n // 3600
+#     n %= 3600
+#     minutes = n // 60
+#     n %= 60
+#     seconds = n
+#     print("{} converted is {} days {} hours {} minutes and {} seconds".format(totalsec, day, hour, minutes, seconds))
+# breakItDown(sec)
 
 # -----------------------------------------------------------------
 
 # 66. Write a Python program to calculate body mass index.
-
-
+# weight=int(input("What is your weight(lbs)? "))
+# ht = int(input("How tall are you? Feet: "))
+# htin = int(input("Inches: "))
+# def bmi(w,f,i):
+#     i += f * 12
+#     bmi = round(w/(i * i) * 703, 1)
+#     return bmi
+# print("BMI: ", bmi(weight, ht, htin))
 # -----------------------------------------------------------------
 
 # 67. Write a Python program to convert pressure in kilopascals to pounds per square inch, a millimeter of mercury (mmHg) and atmosphere pressure.
-
+# kp = int(input("Provide a number of kilopascals: "))
+# def convert(n):
+#     kPa = n
+#     psi = round(n / 6.96476, 2)
+#     mmHg = round(n / 0.13332238741499935, 2)
+#     atmo = round(n / 101.325, 2)
+#     print("""{} kPa converts to
+# {} psi,
+# {} mmHg,
+# {} atm""".format(kPa, psi, mmHg, atmo))
+# convert(kp)
 
 # -----------------------------------------------------------------
 
