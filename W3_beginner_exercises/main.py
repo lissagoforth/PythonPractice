@@ -650,6 +650,7 @@
 
 # 57. Write a program to get execution time for a Python method.
 # import time
+# ****This returns calculation time as 0.0. I do not believe that.****
 # def sum_of_n_numbers(n):
 #     start_time = time.time()
 #     s = 0
@@ -664,37 +665,89 @@
 # -----------------------------------------------------------------
 
 # 58. Write a python program to sum of the first n positive integers.
-
-
+# print("Give me a number.")
+# x=int(input())
+# def sumOfn(n):
+#     return (n*(n+1))/2
+# print(sumOfn(x))
 # -----------------------------------------------------------------
 
 # 59. Write a Python program to convert height (in feet and inches) to centimeters.
-
+# print("Input your height: ")
+# ft = int(input("Feet: "))
+# inch = int(input("Inches: "))
+# def Convertcm(f,i):
+#     i += ft * 12
+#     cm = round(i * 2.54, 1)
+#     return cm
+# print("You're height in centimeters is:", Convertcm(ft, inch))
 
 # -----------------------------------------------------------------
 
 # 60. Write a Python program to calculate the hypotenuse of a right angled triangle.
-
+# a^2 + b^2 = c^2
+# import math
+# print("Lets use Pythagorean's theorum to find the hypotenuse of a right triangle. Please provide the dimensions")
+# a=int(input("Leg 1:"))
+# b=int(input("Leg 2:"))
+# def hypotenuse(x,y):
+#     h = math.sqrt((x ** 2) + (y ** 2))
+#     return h
+# print("The hypotenuse is:", hypotenuse(a,b))    
 
 # -----------------------------------------------------------------
 
 # 61. Write a Python program to convert the distance (in feet) to inches, yards, and miles.
+# print("Lets convert distances. Please provide a distance.")
+# dist = int(input("Feet:"))
+# def inIn(n):
+#     return n * 12
+# def inYds(n):
+#     return round((n / 3), 2)
+# def inMiles(n):
+#     return round((n / 5280), 2)
+# print("""
+# Inches: {}
+# Yards: {}
+# Miles: {}""".format(inIn(dist), inYds(dist), inMiles(dist)))
 
 
 # -----------------------------------------------------------------
 
 # 62. Write a Python program to convert all units of time into seconds.
+# days = int(input("Days: ")) * 3600 * 24
+# hours = int(input("Hours: ")) * 3600
+# minutes = int(input("Minutes: ")) * 60
+# seconds = int(input("Seconds: "))
 
+# def inSeconds(d,h,m,s):
+#     return d+h+m+s
+# print("Total time in seconds:", inSeconds(days, hours, minutes, seconds))
 
 # -----------------------------------------------------------------
 
 # 63. Write a Python program to get an absolute file path.
-
+#solution to get abspath of current directory
+# import os
+# path = input("Provide a file path: ")
+# absPath = os.path.abspath(__file__)
+# print("The absolute path is: ", absPath)
+#solution to get abspath of given directory/file
+# def absPath(path):
+#     import os
+#     return os.path.abspath(path)
+# print("Absolute file path: ", absPath("../W3_beginner_exercises"))
 
 # -----------------------------------------------------------------
 
 # 64. Write a Python program to get file creation and modification date/times.
-
+import os, datetime
+path = input("Provide a file name: ")
+path = os.path.abspath("../{}".format(path))
+c_on = datetime.datetime.fromtimestamp(os.path.getctime(path)).strftime('%Y/%m/%d %H:%M:%S')
+m_on = datetime.datetime.fromtimestamp(os.path.getmtime(path)).strftime('%Y/%m/%d %H:%M:%S')
+print("File was created on: ", c_on)
+print("File was mdified on: ", m_on)
 
 # -----------------------------------------------------------------
 
