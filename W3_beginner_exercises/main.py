@@ -670,6 +670,7 @@
 # def sumOfn(n):
 #     return (n*(n+1))/2
 # print(sumOfn(x))
+
 # -----------------------------------------------------------------
 
 # 59. Write a Python program to convert height (in feet and inches) to centimeters.
@@ -710,7 +711,6 @@
 # Inches: {}
 # Yards: {}
 # Miles: {}""".format(inIn(dist), inYds(dist), inMiles(dist)))
-
 
 # -----------------------------------------------------------------
 
@@ -776,6 +776,7 @@
 #     bmi = round(w/(i * i) * 703, 1)
 #     return bmi
 # print("BMI: ", bmi(weight, ht, htin))
+
 # -----------------------------------------------------------------
 
 # 67. Write a Python program to convert pressure in kilopascals to pounds per square inch, a millimeter of mercury (mmHg) and atmosphere pressure.
@@ -794,71 +795,362 @@
 # -----------------------------------------------------------------
 
 # 68. Write a Python program to calculate the sum of the digits in an integer.
-
+# num = input("Please provide a number, a big one. ")
+# def sumNum(n):
+#     res = 0
+#     for i in n:
+#         i = int(i)
+#         res += i
+#     return res
+# print("The sum of the components is: ", sumNum(num))
 
 # -----------------------------------------------------------------
 
 # 69. Write a Python program to sort three integers without using conditional statements and loops.
 
+# a = int(input("Please provide some numbers to sort. "))
+# b = int(input("Please provide another number. "))
+# c = int(input("Please provide one more number. "))
+
+# low = min(a,b,c)
+# hi = max(a,b,c)
+# mid = (a + b + c) - low - hi
+# print("""The largest number is: {}
+# The smallest number is: {}
+# The middle number is {}""".format(hi, low, mid))
 
 # -----------------------------------------------------------------
 
 # 70. Write a Python program to sort files by date.
+# import os
+# import glob
 
+# files = glob.glob("../../../Documents/*.xlsx")
+# files.sort(key=os.path.getmtime)
+# print("\n".join(files))
 
 # -----------------------------------------------------------------
 
 # 71. Write a Python program to get a directory listing, sorted by creation date.
-
-
+# import os
+# print("\n".join(os.listdir("../../../Documents")))
 # -----------------------------------------------------------------
 
 # 72. Write a Python program to get the details of math module.
-
+# import math
+# print("\n". join(dir(math)))
 
 # -----------------------------------------------------------------
 
 # 73. Write a Python program to calculate midpoints of a line.
-
+# x1 = 3
+# y1 = -4
+# x2 = 7
+# y2 = 5
+# def midpoint(a1, a2, b1, b2):
+#     x = ((a1 + b1)/2)
+#     y = ((a2 + b2)/2)
+#     return "({}, {})".format(x, y)
+# print("The midpoint between (3, -4) and (7, 5) is: ", midpoint(x1, y1, x2, y2))
 
 # -----------------------------------------------------------------
 
 # 74. Write a Python program to hash a word.
-
+# import hashlib
+# x = input("Lets encrypt some words. Give me something to work with: ")
+# out =  hashlib.sha256(x.encode())
+# out = out.hexdigest()
+# print("the hashed version of your input is: ", out)
 
 # -----------------------------------------------------------------
 
 # 75. Write a Python program to get the copyright information.
-
+# import sys
+# print("Copyright Info: ", sys.copyright)
 
 # -----------------------------------------------------------------
 
 # 76. Write a Python program to get the command-line arguments (name of the script, the number of arguments, arguments) passed to a script.
-
+#****My solution after googling****
+# import argparse
+# print("Command line arguments: ", argparse.__all__)
+#****W3's solution****
+# import sys
+# print("Name of the script: ", sys.argv[0])
+# print("Number of arguments: ", len(sys.argv))
+# print("List of arguments: ", str(sys.argv))
+# IN CONSOLE TYPE 'python main.py arg1 arg2 arg3'
 
 # -----------------------------------------------------------------
 
 # 77. Write a Python program to test whether the system is a big-endian platform or little-endian platform.
-
+# import sys
+# print("Its either 'big' or 'little': ", sys.byteorder)
 
 # -----------------------------------------------------------------
 
 # 78. Write a Python program to find the available built-in modules.
-
+# import sys
+# print("All available modules:\n", "\n".join(sys.builtin_module_names))
 
 # -----------------------------------------------------------------
 
 # 79. Write a Python program to get the size of an object in bytes.
-
+# import sys
+# x = input("Let's find the how many bytes are in your input. Type anything: ")
+# print(str(sys.getsizeof(x)), "bytes")
 
 # -----------------------------------------------------------------
 
 # 80. Write a Python program to get the current value of the recursion limit. 
-
+# import sys
+# print("Current recursion limit: ", sys.getrecursionlimit())
 
 # -----------------------------------------------------------------
 
 # 81. Write a Python program to concatenate N strings.
+# a = input("Type something, we'll do some stuff with it. ")
+# b = input("Type something else. ")
+# c = input("One more time. ")
+# x = []
+# x.append(a)
+# x.append(b)
+# x.append(c)
+# sep = "---"
+# print(sep.join(x))
+# -----------------------------------------------------------------
+
+# 82. Write a Python program to calculate the sum over a container.
+# nums = [13, 17, 89, 11, 20]
+# res = 0
+# for i in nums:
+#     res += i
+# print("150 is expected outcome: ", res)
+# -----------------------------------------------------------------
+
+# 83. Write a Python program to test whether all numbers of a list is greater than a certain number.
+# nums = [13, 17, 89, 11, 20]
+# x = int(input("Give me a number. "))
+# def gThan(n):
+#     glist = []
+#     for i in nums:
+#         if i > x:
+#             glist.append(i)
+#     if len(glist) < 1:
+#         return "There are no numbers in the list bigger than the number you provided"
+#     return glist
+# print("Here are the numbers greater than {}: {}".format(x, gThan(x)))
+
+# -----------------------------------------------------------------
+
+# 84. Write a Python program to count the number occurrence of a specific character in a string.
+# sent = "Sphinx of black quartz, judge my vow"
+# letter = input("Give me a letter: ")
+# c = 0
+# for i in sent.lower():
+#     if i == letter:
+#         c += 1
+# print("Your letter occurs in '{}' {} time(s)".format(sent, c))
+
+# -----------------------------------------------------------------
+
+# 85. Write a Python program to check if a file path is a file or a directory.
+# import os 
+# file = "../../PythonPractice"
+# if os.path.isfile(file):
+#     print("The filename is a file")
+# elif os.path.isdir(file):
+#     print("The filename is a directory")
+# else:
+#     print("The filename is neither a file nor a directory")
+
+# -----------------------------------------------------------------
+
+# 86. Write a Python program to get the ASCII value of a character.
+# a = input("Type a letter to get the ASCII value. ")
+# print(ord(a))
+
+# -----------------------------------------------------------------
+
+# 87. Write a Python program to get the size of a file.
+# import os
+# file = "./main.py"
+# print("Python practice's file size is: ", os.path.getsize(file), "Bytes")
+
+# -----------------------------------------------------------------
+
+# 88. Given variables x=30 and y=20, write a Python program to print t "30+20=50".
+# x = 30
+# y = 20
+# a = 50
+# print("{} + {} = {}".format(x,y,a))
+
+# -----------------------------------------------------------------
+
+# 89. Write a Python program to perform an action if a condition is true.
+# Given a variable name, if the value is 1, display the string "First day of a Month!" and do nothing if the value is not equal.
+# x = 1543
+# if x % 2 == 0:
+#     print("My variable is an even number")
+# else:
+#     print("My variable is an odd number")
+
+# -----------------------------------------------------------------
+
+# 90. Write a Python program to create a copy of its own source code.
+#****This is another one I don't quite understand, too meta****
+# print((lambda str='print(lambda str=%r: (str %% str))()': (str % str))())
+
+# -----------------------------------------------------------------
+
+# 91. Write a Python program to swap two variables.
+# x = 'dog'
+# y = 'cat'
+# print("Before: x = {} y = {}".format(x, y))
+# x, y = y, x
+# print("After: x = {} y = {}".format(x, y))
+
+# -----------------------------------------------------------------
+
+# 92. Write a Python program to define a string containing special characters in various forms.
+#****Solution from W3**** Expected Output \#{'}${"}@/
+# print("\#{'}${"'"'"}@/") #wrap double quotes in single quotes
+# print(r"""\#{'}${"}@/""") #r followed by triple quotes to maintain format
+# print('\#{\'}${"}@/') #wrap in single quotes and escape the single quote with a \
+# print('\#{'"'"'}${"}@/') #wrap in single quotes and use double quotes around the single quote
+# print(r'''\#{'}${"}@/''') #r followed by triple single quotes to maintain format
+
+# -----------------------------------------------------------------
+
+# 93. Write a Python program to get the identity of an object.
+# a = 63
+# b = "dog"
+# c = {}
+# d = {}
+# print("a is: {}\nb is: {}\nc is: {}\nd is: {}".format(id(a), id(b), id(c), id(d)))
+# -----------------------------------------------------------------
+
+# 94. Write a Python program to convert a byte string to a list of integers. 
+
+
+# -----------------------------------------------------------------
+
+# 95. Write a Python program to check if a string is numeric.
+
+
+# -----------------------------------------------------------------
+
+# 96. Write a Python program to print the current call stack.
+
+
+# -----------------------------------------------------------------
+
+# 97. Write a Python program to list the special variables used within the language.
+
+
+# -----------------------------------------------------------------
+
+# 98. Write a Python program to get the system time.
+
+
+# -----------------------------------------------------------------
+
+# 99. Write a Python program to clear the screen or terminal.
+
+
+# -----------------------------------------------------------------
+
+# 100. Write a Python program to get the name of the host on which the routine is running.
+
+
+# -----------------------------------------------------------------
+
+# 101. Write a Python program to access and print a URL's content to the console.
+
+
+# -----------------------------------------------------------------
+
+# 102. Write a Python program to get system command output.
+
+
+# -----------------------------------------------------------------
+
+# 103. Write a Python program to extract the filename from a given path. 
+
+
+# -----------------------------------------------------------------
+
+# 104. Write a Python program to get the effective group id, effective user id, real group id, a list of supplemental group ids associated with the current process.
+
+
+# -----------------------------------------------------------------
+
+# 105. Write a Python program to get the users environment.
+
+
+# -----------------------------------------------------------------
+
+# 106. Write a Python program to divide a path on the extension separator. 
+
+
+# -----------------------------------------------------------------
+
+# 107. Write a Python program to retrieve file properties.
+
+
+# -----------------------------------------------------------------
+
+# 108. Write a Python program to find path refers to a file or directory when you encounter a path name.
+
+
+# -----------------------------------------------------------------
+
+# 109. Write a Python program to check if a number is positive, negative or zero.
+
+
+# -----------------------------------------------------------------
+
+# 110. Write a Python program to get numbers divisible by fifteen from a list using an anonymous function.
+
+
+# -----------------------------------------------------------------
+
+# 111. Write a Python program to make file lists from current directory using a wildcard.
+
+
+# -----------------------------------------------------------------
+
+# 112. Write a Python program to remove the first item from a specified list. 
+
+
+# -----------------------------------------------------------------
+
+# 113. Write a Python program to input a number, if it is not a number generate an error message.
+
+
+# -----------------------------------------------------------------
+
+# 114. Write a Python program to filter the positive numbers from a list.
+
+
+# -----------------------------------------------------------------
+
+# 115. Write a Python program to compute the product of a list of integers (without using for loop).
+
+
+# -----------------------------------------------------------------
+
+# 116. Write a Python program to print Unicode characters.
+
+
+# -----------------------------------------------------------------
+
+# 117. Write a Python program to prove that two string variables of same value point same memory location.
+
+
+# -----------------------------------------------------------------
+
+# 18. Write a Python program to create a bytearray from a list.
 
 
 # -----------------------------------------------------------------
