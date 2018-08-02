@@ -2,10 +2,10 @@
 # Sample String : "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are" Output :
 
 # Twinkle, twinkle, little star,
-# 	How I wonder what you are! 
-# 		Up above the world so high,   		
-# 		Like a diamond in the sky. 
-# Twinkle, twinkle, little star, 
+# 	How I wonder what you are!
+# 		Up above the world so high,
+# 		Like a diamond in the sky.
+# Twinkle, twinkle, little star,
 # 	How I wonder what you are
 
 # print("Twinkle, twinkle, little star,\n\tHow I wonder what you are!\n\t\tUp above the world so high,\n\t\tLike a diamond in the sky.\nTwinkle, twinkle, little star,\n\tHow I wonder what you are")
@@ -21,8 +21,8 @@
 # -----------------------------------------------------------------
 
 # 3. Write a Python program to display the current date and time.
-# Sample Output : 
-# Current date and time : 
+# Sample Output :
+# Current date and time :
 # 2014-07-05 14:34:14
 
 # import datetime
@@ -31,7 +31,7 @@
 # -----------------------------------------------------------------
 
 # 4. Write a Python program which accepts the radius of a circle from the user and compute the area.
-# Sample Output : 
+# Sample Output :
 # r = 1.1
 # Area = 3.8013271108436504
 
@@ -44,7 +44,7 @@
 # -----------------------------------------------------------------
 
 # 5. Write a Python program which accepts the user's first and last name and print them in reverse order with a space between them.
- 
+
 # print("Please provide your first name")
 # Fname = input()
 # print("Please provide your last name")
@@ -55,8 +55,8 @@
 
 # 6. Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers.
 # Sample data : 3, 5, 7, 23
-# Output : 
-# List : ['3', ' 5', ' 7', ' 23'] 
+# Output :
+# List : ['3', ' 5', ' 7', ' 23']
 # Tuple : ('3', ' 5', ' 7', ' 23')
 
 # print("Please provide 4 random numbers")
@@ -69,7 +69,7 @@
 # -----------------------------------------------------------------
 
 # 7. Write a Python program to accept a filename from the user and print the extension of that.
-# Sample filename : abc.java 
+# Sample filename : abc.java
 # Output : java
 
 # print("Please provide a filename")
@@ -99,21 +99,21 @@
 # -----------------------------------------------------------------
 
 # 10. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
-# Sample value of n is 5 
+# Sample value of n is 5
 # Expected Result : 615 => 5+55+555
 
 # print("Please provide a number")
 # n = int(input())
-# n1 = int( "%s" % n ) 
+# n1 = int( "%s" % n )
 # n2 = int( "%s%s" % (n,n) )
 # n3 = int( "%s%s%s" % (n,n,n) )
 # print(n1+n2+n3)
 
 # -----------------------------------------------------------------
 
-# 11. Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s). 
+# 11. Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s).
 # Sample function : abs()
-# Expected Result : 
+# Expected Result :
 # abs(number) -> number
 # Return the absolute value of the argument.
 
@@ -231,8 +231,8 @@
 #     for i in range(n):
 #         res += s
 #     print(res)
-# multiply(word, num)  
-#   
+# multiply(word, num)
+#
 # -----------------------------------------------------------------
 
 # 21. Write a Python program to find whether a given number (accept from the user) is even or odd, print out an appropriate message to the user.
@@ -242,7 +242,7 @@
 # def even_odd(n):
 #     if n % 2 == 0:
 #         print(n,"is an even number!")
-#     else:    
+#     else:
 #         print(n,"is an odd number!")
 # even_odd(num)
 
@@ -276,7 +276,7 @@
 #             res += w[:2]
 #         print(res)
 # func(s,i)
-#             
+#
 # -----------------------------------------------------------------
 
 # 24. Write a Python program to test whether a passed letter is a vowel or not.
@@ -292,7 +292,7 @@
 # -----------------------------------------------------------------
 
 # 25. Write a Python program to check whether a specified value is contained in a group of values.
-# Test Data: 
+# Test Data:
 # 3 -> [1, 5, 8, 3] : True
 # -1 -> [1, 5, 8, 3] : False
 
@@ -333,10 +333,10 @@
 # # -----------------------------------------------------------------
 
 # 28. Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing if any numbers that come after 237 in the sequence.
-# numbers = [    
-#     386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 
-#     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 
-#     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 
+# numbers = [
+#     386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
+#     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
+#     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
 #     958,743, 527
 #     ]
 
@@ -347,14 +347,14 @@
 #         if i == 237:
 #             break
 # find_evens(numbers)
-#              
+#
 # -----------------------------------------------------------------
 
 # 29. Write a Python program to print out a set containing all the colors from color_list_1 which are not present in color_list_2.
-# Test Data : 
-# color_list_1 = set(["White", "Black", "Red"]) 
+# Test Data :
+# color_list_1 = set(["White", "Black", "Red"])
 # color_list_2 = set(["Red", "Green"])
-# # Expected Output : 
+# # Expected Output :
 # # {'Black', 'White'}
 
 # def get_diff(a,b):
@@ -389,7 +389,7 @@
 #             break
 #     return res
 # print(gcd(n1,n2))
-#         
+#
 # -----------------------------------------------------------------
 
 # 32. Write a Python program to get the least common multiple (LCM) of two positive integers.
@@ -584,8 +584,8 @@
 
 # -----------------------------------------------------------------
 
-# 51. Write a Python program to determine profiling of Python programs. 
-# Note: A profile is a set of statistics that describes how often and for how long various parts of the program executed. These statistics can be formatted into reports via the pstats module. 
+# 51. Write a Python program to determine profiling of Python programs.
+# Note: A profile is a set of statistics that describes how often and for how long various parts of the program executed. These statistics can be formatted into reports via the pstats module.
 # import cProfile
 # def doStuff(n):
 #     sqrd = n * n
@@ -596,11 +596,11 @@
 #     print("Times 2", xtwo)
 #     print("Minus 1", minus1)
 #     print("Plus 1", plus1)
-# cProfile.run('doStuff(4)') 
+# cProfile.run('doStuff(4)')
 
 # -----------------------------------------------------------------
 
-# 52. Write a Python program to print to stderr. 
+# 52. Write a Python program to print to stderr.
 # from __future__ import print_function
 # import sys
 # def errorPrint(*args, **kwargs):
@@ -609,7 +609,7 @@
 
 # -----------------------------------------------------------------
 
-# 53. Write a python program to access environment variables. 
+# 53. Write a python program to access environment variables.
 # import os
 # print(os.environ)
 
@@ -623,9 +623,9 @@
 
 # 55. Write a Python to find local IP addresses using Python's stdlib
 # import socket
-# print([l for l in ([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2] 
-# if not ip.startswith("127.")][:1], [[(s.connect(('8.8.8.8', 53)), 
-# s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, 
+# print([l for l in ([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2]
+# if not ip.startswith("127.")][:1], [[(s.connect(('8.8.8.8', 53)),
+# s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET,
 # socket.SOCK_DGRAM)]][0][1]]) if l][0][0])
 
 # -----------------------------------------------------------------
@@ -643,7 +643,7 @@
 #         sizex = right - left + 1
 #         sizey = bottom - top + 1
 #         return sizex, sizey
-            
+
 # print("Columns and Rows:", windowDim())
 
 # -----------------------------------------------------------------
@@ -694,7 +694,7 @@
 # def hypotenuse(x,y):
 #     h = math.sqrt((x ** 2) + (y ** 2))
 #     return h
-# print("The hypotenuse is:", hypotenuse(a,b))    
+# print("The hypotenuse is:", hypotenuse(a,b))
 
 # -----------------------------------------------------------------
 
@@ -902,7 +902,7 @@
 
 # -----------------------------------------------------------------
 
-# 80. Write a Python program to get the current value of the recursion limit. 
+# 80. Write a Python program to get the current value of the recursion limit.
 # import sys
 # print("Current recursion limit: ", sys.getrecursionlimit())
 
@@ -955,7 +955,7 @@
 # -----------------------------------------------------------------
 
 # 85. Write a Python program to check if a file path is a file or a directory.
-# import os 
+# import os
 # file = "../../PythonPractice"
 # if os.path.isfile(file):
 #     print("The filename is a file")
@@ -1030,7 +1030,7 @@
 # print("a is: {}\nb is: {}\nc is: {}\nd is: {}".format(id(a), id(b), id(c), id(d)))
 # -----------------------------------------------------------------
 
-# 94. Write a Python program to convert a byte string to a list of integers. 
+# 94. Write a Python program to convert a byte string to a list of integers.
 # x =  bytearray(input("Gimme something: ").encode())
 # print(list(x))
 
@@ -1071,7 +1071,7 @@
 # 99. Write a Python program to clear the screen or terminal.
 # import os, time
 # os.system("cls")
-# time.sleep(2) 
+# time.sleep(2)
 
 # -----------------------------------------------------------------
 
@@ -1096,7 +1096,7 @@
 
 # -----------------------------------------------------------------
 
-# 103. Write a Python program to extract the filename from a given path. 
+# 103. Write a Python program to extract the filename from a given path.
 # import os
 # print(os.path.basename("../../PythonPractice"))
 
@@ -1115,7 +1115,7 @@
 
 # -----------------------------------------------------------------
 
-# 106. Write a Python program to divide a path on the extension separator. 
+# 106. Write a Python program to divide a path on the extension separator.
 # import os
 # p = 'heres/a/sample/path.html'
 # for i in ['path.html,', 'filename', p, '/', '']:
@@ -1137,63 +1137,295 @@
 # -----------------------------------------------------------------
 
 # 109. Write a Python program to check if a number is positive, negative or zero.
-# x = input("Give me a number: ")
-# try:
-#     float(x)
-#     if x > 0:
-#         print("Your number is positive")
-#     elif x == 0:
-#         print("Your number is 0")
-#     else:
-#         print("Your number is negative")
-# except:
-#     print("Thats not a number, silly")
+# x = float(input("Give me a number: "))
+# if x > 0:
+#     print("Your number is positive")
+# elif x == 0:
+#     print("Your number is 0")
+# else:
+#     print("Your number is negative")
+
 # -----------------------------------------------------------------
 
 # 110. Write a Python program to get numbers divisible by fifteen from a list using an anonymous function.
-
+# nums = [85, 45, 60, 83, 92, 50, 115, 120]
+# divby15 = list(filter(lambda n: (n % 15 == 0), nums))
+# print(list(divby15))
 
 # -----------------------------------------------------------------
 
 # 111. Write a Python program to make file lists from current directory using a wildcard.
-
+# import glob
+# print(glob.glob('*.*'))
 
 # -----------------------------------------------------------------
 
-# 112. Write a Python program to remove the first item from a specified list. 
-
+# 112. Write a Python program to remove the first item from a specified list.
+# nums = [85, 45, 60, 83, 92, 50, 115, 120]
+# print("Before: ", nums)
+# nums.pop(0)
+# print("After: ", nums)
 
 # -----------------------------------------------------------------
 
 # 113. Write a Python program to input a number, if it is not a number generate an error message.
-
+# x = input("Give me a number: ")
+# try:
+#     int(x)
+#     print("Its a number")
+# except ValueError:
+#     print("Error: Input is not a number")
 
 # -----------------------------------------------------------------
 
 # 114. Write a Python program to filter the positive numbers from a list.
-
+# nums = [85, 45, -60, 83, 92, 50, -115, -120]
+# print(nums)
+# poz = list(filter(lambda x: (x > 0), nums))
+# print(poz)
 
 # -----------------------------------------------------------------
 
-# 115. Write a Python program to compute the product of a list of integers (without using for loop).
-
+# 115. Write a Python program to compute the product of a list of integers (without using for loop)
+# from functools import reduce
+# nums = [85, 45, 60]
+# prod = reduce((lambda x, y: x * y), nums)
+# print(prod)
 
 # -----------------------------------------------------------------
 
 # 116. Write a Python program to print Unicode characters.
-
+# msg = u'\u004f\u004f\u004f\u004f\u0048 \u0053\u0055\u0050\u0045\u0052 \u0053\u0045\u0043\u0052\u0045\u0054 \u004d\u0045\u0053\u0053\u0041\u0047\u0045'
+# print(msg)
 
 # -----------------------------------------------------------------
 
 # 117. Write a Python program to prove that two string variables of same value point same memory location.
+# x = "TestVariable"
+# y = "TestVariable"
+# print("""x is located at: {}\ny is located at: {}""".format(hex(id(x)), hex(id(y))))
+
+# -----------------------------------------------------------------
+
+# 118. Write a Python program to create a bytearray from a list.
+# nums = [85, 45, 60, 83, 92, 50, 115, 120]
+# print(list(bytearray(nums)))
+
+# -----------------------------------------------------------------
+
+# 119. Write a Python program to display a floating number in specified numbers.
+# num = 145.96843023
+# print("""Full float number: {}\nRounded to two decimals: {}""".format(num, round(num, 2)))
+
+# -----------------------------------------------------------------
+
+# 120. Write a Python program to format a specified string to limit the number of characters to 6.
+# num = "14596843023"
+# print('%.6s' % num)
+
+# -----------------------------------------------------------------
+
+# 121. Write a Python program to determine if variable is defined or not.
+# try:
+#   x = 1
+# except NameError:
+#   print("Variable 'x' is not defined")
+# else:
+#   print("Variable 'x' is defined")
+# try:
+#   y
+# except NameError:
+#   print("Variable 'y' is not defined")
+# else:
+#   print("Variable 'y' is defined.")
+
+# -----------------------------------------------------------------
+
+# 122. Write a Python program to empty a variable without destroying it.
+# Sample data: n=20
+# d = {"x":200}
+# Expected Output : 0
+# {}
+# n = 20
+# d = {"x":200}
+# print("""n = {}\nd = {}""".format(type(n)(), type(d)()))
+
+# -----------------------------------------------------------------
+
+# 123. Write a Python program to determine the largest and smallest integers, longs, floats.
+# import sys
+# print("""Float Info: {}\nInt Value Info: {}\nMax Int Size: {}""".format(sys.float_info, sys.int_info, sys.maxsize))
+
+# -----------------------------------------------------------------
+
+# 124. Write a Python program to check if multiple variables have the same value
+# x,y,z = 43,43,43
+# if x == y and y == z:
+#     print("All variables are equal")
+
+# -----------------------------------------------------------------
+
+# 125. Write a Python program to sum of all counts in a collections?
+# import collections
+# nums = [85, 45, 60, 83, 92, 50, 115, 120]
+# print(sum(collections.Counter(nums).values()))
+# print(len(nums))
+# -----------------------------------------------------------------
+
+# 126. Write a Python program to get the actual module object for a given object.
+# from inspect import getmodule
+# from math import sqrt
+# print(getmodule(sqrt))
+
+# -----------------------------------------------------------------
+
+# 127. Write a Python program to check if an integer fits in 64 bits.
+# n = 453
+# if n.bit_length() <= 63:
+#     print((-2 ** 63).bit_length())
+#     print((2 ** 63).bit_length())
+
+# -----------------------------------------------------------------
+
+# 128. Write a Python program to check if lowercase letters exist in a string.
+# words = "Here is a Sample String"
+# caps = "SAMPLE STRING"
+# def findLC(x):
+#     if any(l for l in x if l.islower()):
+#         print("There are lowercase letters present.")
+#     else:
+#         print("There are no lowercase letters present.")
+# findLC(words)
+# findLC(caps)
+# -----------------------------------------------------------------
+
+# 129. Write a Python program to add leading zeroes to a string.
+# num = '3632.3452'
+# print("Before: ", num)
+# num = num.ljust(15, '0')
+# print("After: ", num)
+
+# -----------------------------------------------------------------
+
+# 130. Write a Python program to use double quotes to display strings.
+# import json
+# print(json.dumps({'Heads': 1, 'Shoulders': 2, 'Knees': 3, 'Toes': 4}))
+
+# -----------------------------------------------------------------
+
+# 131. Write a Python program to split a variable length string into variables.
+# _vars = ['fname','lname','zipcode']
+# x,y,z = (_vars + [None] * 3)[:3]
+# print(x,y,z)
+# _vars = ['John', 'Smith', '37067']
+# x,y,z = (_vars + [None] * 3)[:3]
+# print(x,y,z)
+
+# -----------------------------------------------------------------
+
+# 132. Write a Python program to list home directory without absolute path.
+# import os.path
+# print(os.path.expanduser('~'))
+
+# -----------------------------------------------------------------
+
+# 133. Write a Python program to calculate the time runs (difference between start and current time) of a program.
+# from timeit import default_timer
+# def timer(n):
+#     start = default_timer()
+#     x = 'dog'
+#     x = x.capitalize()
+#     for row in range(0,n):
+#         print(row)
+#     print(default_timer() - start)
+
+# timer(5)
+# timer(10)
+
+# -----------------------------------------------------------------
+
+# 134. Write a Python program to input two integers in a single line.
+print("Give me the value for x and y")
+x, y = map(int, input().split())
+print("The value of x and y are: ", x, "and", y)
+
+# -----------------------------------------------------------------
+
+# 135. Write a Python program to print a variable without spaces between values.
+# Sample value : x =30
+# Expected output : Value of x is "30"
+
+# -----------------------------------------------------------------
+
+# 136. Write a Python program to find files and skip directories of a given directory.
+
+# -----------------------------------------------------------------
+
+# 137. Write a Python program to extract single key-value pair of a dictionary in variables.
+
+# -----------------------------------------------------------------
+
+# 138. Write a Python program to convert true to 1 and false to 0.
+
+# -----------------------------------------------------------------
+
+# 139. Write a Python program to valid a IP address.
+
+# -----------------------------------------------------------------
+
+# 140. Write a Python program to convert an integer to binary keep leading zeros.
+# Sample data : 50
+# Expected output : 00001100, 0000001100
+
+# -----------------------------------------------------------------
+
+# 141. Write a python program to convert decimal to hexadecimal.
+# Sample decimal number: 30, 4
+# Expected output: 1e, 04
+
+# -----------------------------------------------------------------
+
+# 142. Write a Python program to find the operating system name, platform and platform release date.
+# Operating system name:
+# posix
+# Platform name:
+# Linux
+# Platform release:
+# 4.4.0-47-generic
+
+# -----------------------------------------------------------------
+
+# 143. Write a Python program to determine if the python shell is executing in 32bit or 64bit mode on operating system.
+
+# -----------------------------------------------------------------
+
+# 144. Write a Python program to check if variable is of integer or string.
+
+# -----------------------------------------------------------------
+# 145 was a repeat of 143. For solution, see above.
+# -----------------------------------------------------------------
+
+# 146. Write a Python program to find the location of Python module sources.
+
+# -----------------------------------------------------------------
+
+# 147. Write a Python function to check whether a number is divisible by another number. Accept two integers values form the user.
+
+# -----------------------------------------------------------------
+
+# 148. Write a Python function to find the maximum and minimum numbers from a sequence of numbers.
+
+# -----------------------------------------------------------------
+
+# 149. Write a Python function that takes a positive integer and returns the sum of the cube of all the positive integers smaller than the specified number.
 
 
 # -----------------------------------------------------------------
 
-# 18. Write a Python program to create a bytearray from a list.
-
+# 150. Write a Python function to find a distinct pair of numbers whose product is odd from a sequence of integer values.
 
 # -----------------------------------------------------------------
+
 
 
 
