@@ -1031,83 +1031,123 @@
 # -----------------------------------------------------------------
 
 # 94. Write a Python program to convert a byte string to a list of integers. 
-
+# x =  bytearray(input("Gimme something: ").encode())
+# print(list(x))
 
 # -----------------------------------------------------------------
 
 # 95. Write a Python program to check if a string is numeric.
-
+# x = '145'
+# y = 'dog'
+# try:
+#     int(y)
+#     print("Its numeric!")
+# except:
+#     print("Nah, ain't numeric")
 
 # -----------------------------------------------------------------
 
 # 96. Write a Python program to print the current call stack.
-
-
+# import traceback
+# def test():
+#     nother()
+# def nother():
+#     for i in traceback.format_stack():
+#         print(i.strip())
+# test()
 # -----------------------------------------------------------------
 
 # 97. Write a Python program to list the special variables used within the language.
-
+# print(list(dir(__builtins__)))
 
 # -----------------------------------------------------------------
 
 # 98. Write a Python program to get the system time.
-
+# import time
+# print(time.ctime())
 
 # -----------------------------------------------------------------
 
 # 99. Write a Python program to clear the screen or terminal.
-
+# import os, time
+# os.system("cls")
+# time.sleep(2) 
 
 # -----------------------------------------------------------------
 
 # 100. Write a Python program to get the name of the host on which the routine is running.
-
+# import socket
+# print(socket.gethostname())
 
 # -----------------------------------------------------------------
 
 # 101. Write a Python program to access and print a URL's content to the console.
-
+# import urllib.request
+# with urllib.request.urlopen("https://www.york.ac.uk/teaching/cws/wws/webpage1.html") as response:
+#     html = response.read()
+# print(html)
 
 # -----------------------------------------------------------------
 
 # 102. Write a Python program to get system command output.
-
+# import subprocess
+# res = subprocess.check_output("dir", shell=True)
+# print(res)
 
 # -----------------------------------------------------------------
 
 # 103. Write a Python program to extract the filename from a given path. 
-
+# import os
+# print(os.path.basename("../../PythonPractice"))
 
 # -----------------------------------------------------------------
 
 # 104. Write a Python program to get the effective group id, effective user id, real group id, a list of supplemental group ids associated with the current process.
-
+# Those os methods only available on Unix
+# import os
+# print("""Effective Group Id: {}\nEffective User Id: {}\nReal Group Id: {}\nSupplemental Group Id: {}""".format(os.getegid(), os.geteuid(), os.getgid(), os.getgroups()))
 
 # -----------------------------------------------------------------
 
 # 105. Write a Python program to get the users environment.
-
+# import os
+# print(os.environ)
 
 # -----------------------------------------------------------------
 
 # 106. Write a Python program to divide a path on the extension separator. 
-
+# import os
+# p = 'heres/a/sample/path.html'
+# for i in ['path.html,', 'filename', p, '/', '']:
+#     print('"%s":' % i, os.path.splitext(i))
 
 # -----------------------------------------------------------------
 
 # 107. Write a Python program to retrieve file properties.
-
+# import os, time
+# print("""File: {}\nAccess Time: {}\nModified Time: {}\nChange Time: {}\nSize: {} Bytes""".format(__file__, time.ctime(os.path.getatime(__file__)),time.ctime(os.path.getctime(__file__)), time.ctime(os.path.getmtime(__file__)), os.path.getsize(__file__)))
 
 # -----------------------------------------------------------------
 
 # 108. Write a Python program to find path refers to a file or directory when you encounter a path name.
-
+# import os
+# for f in [ __file__, os.path.dirname(__file__), '/', './broken_link']:
+#     print("""File: {}\nAbsolute: {}\nIs File: {}\nIs Dir: {}\nIs Link: {}\nExists: {}\nLink Exists: {}""".format(f, os.path.isabs(f), os.path.isfile(f), os.path.isdir(f), os.path.islink(f), os.path.exists(f), os.path.lexists(f)))
 
 # -----------------------------------------------------------------
 
 # 109. Write a Python program to check if a number is positive, negative or zero.
-
-
+# x = input("Give me a number: ")
+# try:
+#     float(x)
+#     if x > 0:
+#         print("Your number is positive")
+#     elif x == 0:
+#         print("Your number is 0")
+#     else:
+#         print("Your number is negative")
+# except:
+#     print("Thats not a number, silly")
 # -----------------------------------------------------------------
 
 # 110. Write a Python program to get numbers divisible by fifteen from a list using an anonymous function.
